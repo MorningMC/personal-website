@@ -4,8 +4,8 @@ const websiteName = "MorningMC.link";
 // Define the navigation links and labels
 const navigationLinks = [
 	{ href: "index.html", label: "Index" },
-	{ href: "videos.html", label: "Videos" },
-	{ href: "utils.html", label: "Utils" },
+	{ href: "creations.html", label: "Creations" },
+	{ href: "utilities.html", label: "Utilities" },
 	{ href: "debug.html", label: "Debug" }
 ];
 

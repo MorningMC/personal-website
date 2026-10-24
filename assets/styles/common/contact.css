@@ -12,6 +12,14 @@
 	background-image: url("https://github.githubassets.com/favicons/favicon-dark.png");
 }
 
+.c-modrinth {
+	color: #1BD96A;
+}
+
+.c-modrinth::before {
+	background-image: url("https://modrinth.com/favicon-light-32x32.png");
+}
+
 .c-bilibili {
 	color: #479FD1;
 }
@@ -80,7 +88,7 @@
 	background-image: url("https://qzonestyle.gtimg.cn/qzone/qzact/act/external/tiqq/logo.png");
 }
 
-.c-mail::before, .c-github::before, .c-bilibili::before, .c-youtube::before, .c-zhihu::before, .c-discord::before, .c-x::before, .c-reddit::before, .c-mcforum::before, .c-namemc::before, .c-wechat::before, .c-qq::before {
+.c-mail::before, .c-github::before, .c-modrinth::before, .c-bilibili::before, .c-youtube::before, .c-zhihu::before, .c-discord::before, .c-x::before, .c-reddit::before, .c-mcforum::before, .c-namemc::before, .c-wechat::before, .c-qq::before {
 	content: "";
 	background-repeat: no-repeat;
 	background-size: contain;
