@@ -39,7 +39,7 @@ const header = `<header>
 // Footer HTML content
 const footer = `<footer>
 	<p class="footer-content">
-		Powered by <a href="https://vercel.com/">Vercel</a>. View source <a href="https://github.com/MorningMC/MorningMC.qzz.io">here</a>.
+		Powered by <a href="https://vercel.com/">Vercel</a>. View source <a href="https://github.com/MorningMC/personal-website">here</a>.
 		<br>
 		Copyright (c) 2025 MorningMC. Source code is licensed under <a href="${pathPrefix}LICENSE.txt">MIT License</a>.
 	</p>
