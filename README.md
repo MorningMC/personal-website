@@ -1,1 +1,1 @@
-# MorningMC.qzz.io
+# MorningMC.link

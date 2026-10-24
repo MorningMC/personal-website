@@ -1,5 +1,5 @@
 // The name of the website
-const websiteName = "MorningMC.qzz.io";
+const websiteName = "MorningMC.link";
 
 // Define the navigation links and labels
 const navigationLinks = [
@@ -14,6 +14,12 @@ const navigationLinks = [
 const navigationIndex = parseInt(document.currentScript.getAttribute("data-nav-index") ?? "-1", 10);
 const pageTitle = document.currentScript.getAttribute("data-title") ?? "";
 const pathPrefix = document.currentScript.getAttribute("data-path-prefix") ?? "";
+
+// Update <title> element dynamically
+if (0 <= navigationIndex && navigationIndex < navigationLinks.length) {
+	const sectionPath = pageTitle ? ` / ${pageTitle}` : "";
+	document.title = `${navigationLinks[navigationIndex].label}${sectionPath} @ ${websiteName}`;
+}
 
 // Generate the navigation bar with indicators for selected item
 const navigationBarContent = navigationLinks.map((link, index) => {
@@ -38,12 +44,6 @@ const footer = `<footer>
 		Copyright (c) 2025 MorningMC. Source code is licensed under <a href="${pathPrefix}LICENSE.txt">MIT License</a>.
 	</p>
 </footer>`;
-
-// Update <title> element dynamically
-if (0 <= navigationIndex && navigationIndex < navigationLinks.length) {
-	const sectionPath = pageTitle ? ` / ${pageTitle}` : "";
-	document.title = `${navigationLinks[navigationIndex].label}${sectionPath} @ ${websiteName}`;
-}
 
 // Insert the header and footer
 document.body.insertAdjacentHTML("afterbegin", header);
